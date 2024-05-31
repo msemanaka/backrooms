@@ -2,48 +2,123 @@
 <html lang="pt-br">
 
 <head>
+    <meta name="description" content="Meu Portfólio">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liminal Spaces</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Backrooms</title>
 </head>
 
 <body>
     <header>
-        <h1>Liminal Spaces</h1>
 
-        <nav>
-            <ul>
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>Galeria</li>
-                <li><a href=""></a>Contato</li>
-            </ul>
-        </nav>
+        <div id="header" class="container_header">
+
+            <div id="titulo" class="flex">
+
+                <h1>Backrooms</h1>
+            </div>
+
+            <div id="menu">
+
+                <nav>
+                    <ul class="hover flex">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div id="validador">
+                <h2>Você conhece esse lugar?</h2>
+                <div class="flex evenly">
+                    <input type="radio" value="sim">
+                    <label for="">Sim</label><br>
+                    <input type="radio" value="não">
+                    <label for="">Não</label><br>
+                </div>
+
+            </div>
+        </div>
     </header>
 
-    <main>
+    <main class="">
+
         <section id="home">
-                <img src="/assets/Backrooms_model.jpg" alt="Imagem de uma sala de escritório infinita, com paredes amarelas claras e chão de carpete bege.">
-                <h2>Bem vindo ao Liminal Space</h2>
-                <h4>Ou será que voce já esteve aqui antes?</h4>
-                <p>Um liminal space é um lugar ou estado onde as fronteiras são difusas, e as pessoas muitas vezes experimentam uma sensação de limbo, indefinição ou estranheza. Esses espaços podem ser ricos em potencial criativo e reflexivo, mas também podem ser desconfortáveis devido à incerteza e à falta de estabilidade e a típica sensação de se estar num sonho.</p>
+            <img class="logo borda"
+                src="assets/img/Backrooms_model.jpg"
+                alt="Imagem de capa principal Breaking Bad">
+
+
+            <article id="sobre-texto borda" class="sobre-texto">
+                <h2>The Backrooms</h2><br>
+                <p>The Backrooms é uma lenda urbana e creepypasta denominada como uma parte inacabada do mundo que conta a história de um interminável labirinto de salas de escritório geradas aleatoriamente. É caracterizado pelo cheiro de tapete molhado, paredes com um tom monocromático de amarelo, e lâmpadas fluorescentes zumbindo.</p><br>
+
+                    <h4>Veja um pouco mais no trailer:</h4>
+                    <a href="video.html">The Backrooms (Found Footage)</a>
+            </article>
+
         </section>
-        
-        <section id="galeria">
-            <h2>Galeria</h2>
-            <p>Aqui estão alguns dos Liminal Spaces mais famosos:</p>
-            <img src="/assets/famous_liminal_spaces_1.jpg" alt="Um predio com sua sacada e janelas na parte interna do edificio, dando a sensação de que algo está errado pois a fachada deveria estar na parte externa da construção.">
-            <img src="/assets/famous_liminal_spaces_2.jpg" alt="Uma imagem de uma porta, uma escada no meio e a cozinha.">
-            <img src="/assets/famous_liminal_spaces_3.jpg" alt="Uma piscina interna com canos jorrando água.">
+
+        <section id="sobre" class="sobre_container">
+
+            <article id="sobre-texto " class="sobre-texto">
+                <h1>Quem sou eu?</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odit voluptates incidunt
+                    inventore rem error harum blanditiis accusamus vitae, minus fugit consequatur? Dolorum maiores magni
+                    deleniti modi sit laudantium totam!
+                </p>
+
+                <div id="sobre-github" class="sobre_github flex">
+                    <a class="btn" target="_blank" href="https://github.com/msemanaka">Github</a>
+
+                    <p>4 Seguidores</p>
+                    <p>12 Repositórios</p>
+                </div>
+
+            </article>
+
+            <img src="https://avatars.githubusercontent.com/u/156385428?v=4"
+                alt="Ícones de conexões">
         </section>
-        
-        <section id="contato">
-            <h2>Entre em contato</h2>
-            <ul>
-                <li><a href="https://github.com/msemanaka"><img src="/assets/github.svg" alt="Ícone do Github"></a></li>
-                <li><a href="https://www.linkedin.com/in/msemanaka/"><img src="/assets/linkedin.svg" alt="Ícone do Linkedin"></a></li>
-            </ul>
+
+        <section id="contato" class="borda">
+
+            <h2>Me contate</h2>
+
+            <form action="" method="POST">
+                <div>
+                    <input type="hidden" name="_next" value="">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+                <div>
+                    <label for="nome"><strong>Nome: </strong></label>
+                    <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div>
+                    <label for="email"><strong>Email: </strong></label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div>
+                    <label for="subject"><strong>Assunto: </strong></label>
+                    <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required>
+                </div>
+                <div>
+                    <label for="message"><strong>Mensagem: </strong></label>
+                    <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
         </section>
     </main>
+
+    <footer>
+        Feito com ❤ por Milena - 2024
+    </footer>
 </body>
 
 </html>
